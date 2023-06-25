@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+/*HEADER*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+header{
+    width: 100vw;
+    max-width: 100%;
+    background-color: #f2f2f2;
+    padding: 0.7rem;
+    position: fixed;
+    transition: .5s;
+    z-index: 1;
+}
+
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: auto auto;
+   
+}
+
+.navbarLogo{
+    height: 4rem;
+}
+
+.navbarListas{
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    letter-spacing: 0.1em;
+}
+
+.lista{
+    background-image: linear-gradient(black, black);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+    color: black;
+}
+.lista:hover, .lista:focus {
+    background-size: 100% 2px;
+}
+
+a{
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+#toggler,
+ .navbar label{
+    display: none;
+}
+
+
+
+/*MAIN*/
+
+/*INICIO*/
+
+.inicio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    letter-spacing: 0.1em;
+    background-attachment: fixed;
+}
+
+.inicio .contenido .info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: aparecer 5s forwards;
+}
+
+@keyframes aparecer{
+    0%{
+        margin-left: -50px;
+        opacity: 0;
+    }
+    100%{
+        margin-left: 0;
+        opacity: 1;
+    }
+}
+
+.inicio .contenido .info .saludo{
+    font-size: 60px;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+.saludo__texto{
+    display: inline-block;
+    font-size: 30px;
+    color: black;
+    color: #4c4c4c;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.inicio .contenido .info .redes{
+    display: inline-block;
+    color: #4c4c4c;
+    font-size: 20px;
+    color: #4c4c4c;
+}
+
+.fa-sharp.fa-solid.fa-bars {
+    font-size: 35px; /* Aumenta el tamaño del ícono */
+  }
+
+
+/*SOBRE  MI*/
+.sobre__mi .contenido{
+    display: flex;
+    height: 100vh;
+    justify-content: space-between;
+    max-width: 1200px;
+}
+
+.sobre__mi .contenido .left{
+ width: 50%;
+}
+
+.sobre__mi .contenido .right{
+    width: 50%;
+    padding-left: 50px;
+}
+
+.titulo__sobremi{
+    display: inline-block;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #f2f2f2;
+}
+
+.parrafo__sobremi{
+    font-size: 15px;
+    line-height: 30px;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.btn__descargar{
+    display: inline-block;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 12px 30px;
+    border: 2px solid black;
+    transition: .5s;
+}
+
+.btn__descargar:hover{
+    background-color: white;
+    color: black;
+}
+
+.contenedor__imagen .imagen{
+    width: 100%;
+}
+
+
+
+
+/*CONTACTO */
+.form__wrap{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0 0 0 / 0.2);
+    margin-bottom: 25px;
+}
+
+.map__info{
+    width: 40%;
+    margin: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.form__contact{
+    width: 50%;
+    padding: 70px 30px;
+}
+
+.form__contact h2{
+    font-size: 30px;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 40px;
+}
+
+.form__contact .user__info{
+    display: flex;
+    flex-direction: column;
+}
+
+.form__contact input, .form__contact textarea{
+    width: 100%;
+    padding: 8px 0px 5px;
+    border: none;
+    border-bottom: 2px solid #d1d1d1;
+    color: #5a5a5a;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+textarea#mensaje {
+    min-height: 100px;
+    max-height: 200px;
+    width: 100%;
+    resize: vertical;
+  } 
+
+
+:focus{
+    outline: none;
+}
+
+.form__contact input[type="button"]{
+    width: 180px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    align-self: flex-end;
+}
+
+.form__contact input[type="button"]:hover{
+    background-color: #a4a4a4;
+}
+
+/*FOOTER*/
+footer {
+    background-color: #f2f2f2;
+    padding: 25px;
+    text-align: center;
+  }
+  
+  p {
+    font-size: 12px;
+    color: #a4a4a4;
+    margin: 0;
+  }
+
+
+
+/*MEDIA QUERIES*/
+@media screen and (max-width: 600px) {
+    /*SECCION HEADER*/
+    .menu{
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    .navbarListas{
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .navbar label{
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    #toggler:checked ~ .menu{
+        max-height: 100%;
+    }
+
+    /* SECCION INICIO */
+    .inicio .contenido .info .saludo {
+        font-size: 40px;
+    }
+
+    .saludo__texto {
+        font-size: 20px;
+    }
+
+    .inicio .contenido .info .redes {
+        font-size: 16px;
+    }
+
+    /* SOBRE MI */
+    .sobre__mi .contenido {
+        flex-direction: column;
+    }
+
+    .sobre__mi .contenido .left,
+    .sobre__mi .contenido .right {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    /* CONTACTO */
+    .form__wrap {
+        flex-direction: column;
+    }
+
+    .map__info {
+        margin: 100px;
+
+    }
+
+    .form__contact,
+    .map__info {
+        width: 100%;
+    }
+
+    .btn__descargar {
+        margin-bottom: 50px; /* Agrega un espacio de 10px debajo del botón */
+      }
+
+    /* FOOTER */
+    footer {
+        padding: 15px;
+    }
+
+    p {
+        font-size: 10px;
+    }
+
+    .form__contact h6 {
+        margin-bottom: 30px; 
+      }
+}

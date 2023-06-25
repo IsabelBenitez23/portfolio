@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio | Isabel Benitez</title>
+    <link rel="stylesheet" href="./CSS/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <header> <!--INICIO HEADER-->
+        <nav class="navbar container">
+            <picture class="navbarCajaLogo">
+                <a href="index.html"> <!--Logo redirige al HOME-->
+                    <img class="navbarLogo" src="./IMAGENES/LOGO ISA SIn fondo.png" alt="Logotipo color negro Li de Lilian Isabel">
+                </a>
+            </picture>
+
+            <input type="checkbox" id="toggler">
+            <label for="toggler"><i class="fa-sharp fa-solid fa-bars" style="color: #00040a;"></i></label>
+
+            <div class="menu">
+                <ul class="navbarListas">
+                    <li class="lista"><a href="./index.html">INICIO</a></li>
+                    <li class="lista"><a href="#sobremi">SOBRE MI</a></li>
+                    <li class="lista"><a href="./HTML/portfolio.html">PORTFOLIO</a></li>
+                    <li class="lista"><a href="#contactoyForm">CONTACTO</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header> <!--FIN HEADER-->
+
+
+
+    <main> <!--INICIO MAIN-->
+        <section class="inicio container"> <!--INICIO CAJA 1-->
+            <article class="contenido">
+                <div class="info">
+                    <h1 class="saludo">Hola! Soy Isabel</h1>
+
+                    <p class="saludo__texto">Front-End Developer</p>
+
+                    <div class="redes">
+                        <a href="https://github.com/IsabelBenitez23"  target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/isabel-benitez-acosta-27b297232/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://twitter.com/lilianisabel23"  target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+                        <a href="mailto:acosta.isabel@outlook.com"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+            </article>
+        </section> <!--FIN CAJA 1-->
+
+
+
+        <section  id="sobremi" class="sobre__mi container"> <!--INICIO CAJA 2-->
+            <article class="contenido">
+                <div class="left">
+                    <picture class="contenedor__imagen">
+                        <img class="imagen" src="./IMAGENES/mifoto.jpg" alt="foto en blanco y negro chica sonriendo parada en un puente">
+                    </picture>
+                </div>
+
+                <div class="right">
+                    <div class="info">
+                        <h2 class="titulo__sobremi">SOBRE MI</h2>
+                        <p class="parrafo__sobremi">Estudiante de segundo año de la carrera de Ingeniería en Sistemas Informáticos. Apasionada por la tecnología y con ganas de aprender contantemente. 
+                            Actualmente capacitandome para convertirme en Front-End Developer y UX & UI Designer.</p>
+                        <a class="btn__descargar" href="./IMAGENES/cv isabel.pdf" target="_blank">Descargar CV</a>
+                    </div>
+                </div>
+
+            </article>
+        </section> <!--FIN CAJA 2-->
+
+
+
+        <section class="form__wrap container" id="contactoyForm"> <!--INICIO CAJA 3-->
+            <article class="map__info">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105073.27471138026!2d-58.51587110377054!3d-34.61579593291539!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20CABA%2C%20Argentina!5e0!3m2!1ses!2spy!4v1686518318622!5m2!1ses!2spy" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <h5>Buenos Aires - Argentina <i class="fa-solid fa-location-dot" style="color: #000000;"></i></h5>
+            </article>
+
+            <form name="formularioContacto" class="form__contact">
+                <h2>Contáctame</h2>
+                <div class="user__info">
+                    <label for="names">Nombres *</label>
+                    <input type="text" id="names">
+
+                    <label for="phone">Teléfono / Celular</label>
+                    <input type="text" id="phone">
+
+                    <label for="emai;">Correo electrónico *</label>
+                    <input type="text" id="email">
+
+                    <label for="mensaje">Mensaje *</label>
+                    <textarea name="mensaje" id="mensaje" rows="4" minlength="10" maxlength="200" style="resize: vertical;"></textarea>
+                    <h6>Todos los campos marcados (*) son obligatorios.</h6>
+
+                    <input type="button" id="viewAlerta" value="Enviar Mensaje">
+                </div>
+            </form>
+        </section> <!--FIN CAJA 3-->
+    </main> <!--FIN MAIN-->
+
+
+
+    <footer> <!--INICIO FOOTER-->
+         <section>
+            <p>Creado con amor y código &hearts;</p>
+            <p>Contacto: acosta.isabel@outlook.com</p>
+         </section>
+    </footer> <!--FIN FOOTER-->
+    <script src="./JS/script.js"></script>
+</body>
+</html>
+
